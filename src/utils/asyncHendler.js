@@ -1,8 +1,8 @@
-import { request } from "express"
+// import { request } from "express"
 
  const asyncHendler =(reqestHendeler)=>{
-    (req, res, next)=>{
-        Promise.resolve(requestHendeler(req,res,next)).
+    return(req, res, next)=>{
+        Promise.resolve(reqestHendeler(req,res,next)).
         catch((err)=> next(err))
     }
  }
